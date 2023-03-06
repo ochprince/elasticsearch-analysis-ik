@@ -30,7 +30,7 @@
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <excludes>
-                <exclude>org.elasticsearch:elasticsearch</exclude>
+                <exclude>com.colasoft.opensearch:elasticsearch</exclude>
             </excludes>
         </dependencySet>
         <dependencySet>
