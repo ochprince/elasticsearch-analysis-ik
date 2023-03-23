@@ -57,21 +57,21 @@
     <distributionManagement>
         <snapshotRepository>
             <id>oss.sonatype.org</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <url></url>
         </snapshotRepository>
         <repository>
             <id>oss.sonatype.org</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <url>/</url>
         </repository>
     </distributionManagement>
 
     <repositories>
         <repository>
-            <id>oss.sonatype.org</id>
-            <name>OSS Sonatype</name>
+            <id>Colasoft</id>
+            <name>Colasoft maven repo</name>
+            <url>http://192.168.0.9:8081/nexus/content/groups/public</url>
             <releases><enabled>true</enabled></releases>
             <snapshots><enabled>true</enabled></snapshots>
-            <url>http://oss.sonatype.org/content/repositories/releases/</url>
         </repository>
     </repositories>
 
@@ -80,10 +80,7 @@
             <groupId>com.colasoft.opensearch</groupId>
             <artifactId>opensearch</artifactId>
             <version>${opensearch.version}</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/opensearch-2.6.0.jar</systemPath>
         </dependency>
-
 
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
